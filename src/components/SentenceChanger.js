@@ -1,5 +1,5 @@
 import './SentenceChanger.css';
-import sentences from '../data';
+import sentences from '../sentences';
 import { useState, useEffect} from 'react';
 
 const SentenceChanger = () => {

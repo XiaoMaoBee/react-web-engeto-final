@@ -1,20 +1,50 @@
-const data = [
+import image1 from "./images/image1.jpg";
+import image2 from "./images/image2.jpg";
+import image3 from "./images/image3.jpg";
+import image4 from "./images/image4.jpg";
+import image5 from "./images/image5.jpg";
+
+const cardContent = [
     {
-        subject:"dancing",
-        sentence: "Tanec je spojení hudby, rytmu s tělem a duší. Je uvolňující a nabíjí tanečníka energií."
+        id: 1,
+        image: image3,
+        artist_name: "Sofija",
+        art: "Dancing",
+        skill_level: 3,
+        description: "Šavle je středně těžká kungfu sestava"        
     },
     {
-        subject:"taichi-kungfu",
-        sentence: "2-Taichi je meditace v pohybu a přináší harmonii ducha a mysly. Může být cestou k sebepoznání a kultivace na cestě k velké Pravdě"
+        id: 2,
+        image: image1,
+        artist_name: "Sofia",
+        art: "Taichi-Kungfu",
+        skill_level: 3,
+        description: "Vějíř je středně těžká, elegantní a oblíbená kungfu sestava "
     },
     {
-        subject:"story-writing",
-        sentence: "3-Psaní příběhů je skvělý způsob jak se podělit o své zážitky, myšlenky, úspěchy i neúspěchy s celým světem. Pomáhá odstoupit od problému a podívat se na něj z pozice pozorovatele, bez emocí a odsudků."
+        id: 3,
+        image: image2,
+        artist_name: "Sofija",
+        art: "Story-writing",
+        skill_level: "4",
+        description: "Taiji meč je obtížná sestava, která vyžaduje kvalitní zvládnutí základních dovedností a mnoho dalšího."
     },
     {
-        subject: "drawing",
-        sentence: "4-Kreslení je světem fantazie. Tvoříte reálný obraz něčeho neskutečného, co se díky vám narodí do naší reality. Je to svět, který tvoříte podle svých představ."
+        id: 4,
+        image: image4,
+        artist_name: "Sofija",
+        art: "Drawing",
+        skill_level: 4,
+        description: "Qi gong pěti zvířat je účinná sestava prospěšná pro tělo a mysl."
+    },
+    {
+        id: 5,
+        image: image5,
+        artist_name: "Sofija",
+        art: "Základní cviky",
+        skill_level: 2,
+        description: "Základní pohyby a cviky jsou nutnou součástí všech stylů kungfu, taiji i qi-gong"
     }
 ]
 
-export default data;
+export default cardContent;

@@ -1,0 +1,21 @@
+
+.presentation-container {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    background-color: darkgoldenrod;
+    color: white;
+    padding-top: 20px;
+    margin-left: 20px;
+    min-height: 100vh;
+
+}
+
