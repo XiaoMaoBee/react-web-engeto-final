@@ -4,9 +4,9 @@ const ArtCard = (props) => {
 
     return <div className="card">
         <img src={props.image} alt="" />
-        <p>Student: {props.studentName}</p>
-        <p>Styl: {props.style}</p>
-        <p>Náročnost: {props.level} / 5</p>
+        <h2>{props.style}</h2>
+        <p>Author/performer: {props.studentName}</p>        
+        <p>Purpose: {props.purpose}</p>
         <p className="description">Popis:<br /> {props.description}</p>
         {/* <MoreInfoButton /> */}
     </div>

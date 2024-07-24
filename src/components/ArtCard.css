@@ -9,9 +9,19 @@
     border-radius: 10px;
 }
 
+.card h2 {
+    margin-top: 15px;
+}
+
+p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
 .description {
     height: 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 img {

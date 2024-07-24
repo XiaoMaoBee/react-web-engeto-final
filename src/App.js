@@ -7,9 +7,11 @@ const App = () => {
 
 
 
-  return <section>
+  return <section className="app-container">
 
-    <h1>Sofijas' Arts</h1>
+    <div className="web-intro">
+    <h1>Sofija's Arts</h1>
+    </div>
     <SentenceChanger />
     <Presentation />
     <DescriptionBox />

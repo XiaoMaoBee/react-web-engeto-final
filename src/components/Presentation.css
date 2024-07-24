@@ -1,6 +1,12 @@
 
 .presentation-container {
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.presentation-container h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 .cards-container {
@@ -10,12 +16,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-
-    background-color: darkgoldenrod;
-    color: white;
-    padding-top: 20px;
-    margin-left: 20px;
-    min-height: 100vh;
-
+    /* color: white; */
+    /* padding: 20px; */
+    /* min-height: 100vh; */
 }
 

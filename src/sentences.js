@@ -1,11 +1,12 @@
 const data = [
     {
-        subject:"dancing",
-        sentence: "Tanec je spojení hudby, rytmu s tělem a duší. Je uvolňující a nabíjí tanečníka energií."
-    },
-    {
         subject:"taichi-kungfu",
         sentence: "2-Taichi je meditace v pohybu a přináší harmonii ducha a mysly. Může být cestou k sebepoznání a kultivace na cestě k velké Pravdě"
+        
+    },
+    {
+        subject:"dancing",
+        sentence: "Tanec je spojení hudby, rytmu s tělem a duší. Je uvolňující a nabíjí tanečníka energií."
     },
     {
         subject:"story-writing",

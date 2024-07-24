@@ -17,7 +17,7 @@ const SentenceChanger = () => {
         changeSentence();
     }, [])
 
-    return <div>
+    return <div className='sentence-box'>
         <p>{sentence}</p>
     </div>
 }
