@@ -1,13 +1,27 @@
 import "./App.css";
-import SentenceChanger from "./components/SentenceChanger";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+/* import SentenceChanger from "./components/SentenceChanger";
 import Presentation from "./components/Presentation";
-import DescriptionBox from "./components/DescriptionBox";
+import DescriptionBox from "./components/DescriptionBox"; */
+import Home from "./pages/Home";
+import Api from "./pages/ApiPage";
 
 const App = () => {
 
 
+  return <BrowserRouter>
+  <Routes>
 
-  return <section className="app-container">
+    <Route path='/' element={ <Home /> } />
+    <Route path='/apiPage' element={ <Api /> } />
+
+  </Routes>
+  
+  </BrowserRouter>
+
+
+
+  /* return <section className="app-container">
 
     <div className="web-intro">
     <h1>Sofija's Arts</h1>
@@ -16,7 +30,7 @@ const App = () => {
     <Presentation />
     <DescriptionBox />
 
-    </section>  
+    </section>   */
 }
 
 export default App
