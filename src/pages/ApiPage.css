@@ -1,0 +1,40 @@
+.api-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.api-page-container nav {    
+    margin-top: 20px;
+    background-color: black;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;    
+}
+
+.api-page-container nav li a {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.api-page-container li {
+    list-style: none;
+    background-color: white;   
+    display: inline;
+    padding: 10px 32px;
+    line-height: 49.6px;
+    min-width: 100px;
+    border-radius: 10px;
+    transition: all 0.3s linear ;   
+}
+
+.api-page-container li:hover {
+    background-color:  rgb(202, 201, 201);
+}
+
+.api-page-container .li-home {
+    padding: 10px 40px;
+    margin-right: 20px;
+}

@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom"
-import ApiQR from "../components/ApiQR"
+import { Link } from "react-router-dom";
+import ApiQR from "../components/ApiQR";
+import './ApiPage.css';
 
 const Api = () => {
-  return <section>
+  return <section className="api-page-container">
     <nav>
         <ul>
-            <li><Link to='/'>Domů</Link></li>
+            <li className="li-home"><Link to='/'>Domů</Link></li>
             <li>ApiPage</li>
         </ul>
     </nav>

@@ -1,0 +1,52 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container nav {
+    margin-top: 20px;
+    background-color: black;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.app-container nav ul {
+    
+}
+
+.app-container nav li {
+    list-style: none;
+    background-color: white;   
+    display: inline;
+    padding: 10px 32px;
+    /* margin-left: 20px; */
+    line-height: 49.6px;
+    min-width: 100px;
+    border-radius: 10px;
+    transition: all 0.3s linear ;
+}
+
+
+.app-container nav .li-home {
+    padding: 10px 40px;
+    margin-right: 20px;
+}
+.app-container nav li:hover {
+    background-color:  rgb(202, 201, 201);
+}
+
+.app-container nav a {
+    text-decoration: none;
+}
+
+.web-intro {
+    min-height: 30vh;
+}
+
+.web-intro h1 {
+    margin-top: 100px;
+    font-size: 60px;
+}

@@ -1,13 +1,16 @@
-import { json } from 'react-router-dom';
+// import { json } from 'react-router-dom';
 import './ApiQR.css';
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
+
 
 const ApiQR = () => {
 
+    const url = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://'
+
     const [userUrl, setUserUrl] = useState('');
 
-    const url = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://engeto.cz/'
-
+    
+    // Příprava dat z api
     const getQrCode = async () => {
         const response = await fetch(url);
         const data = response.url
@@ -16,28 +19,41 @@ const ApiQR = () => {
 
     } 
 
-    getQrCode()
+    useEffect( () => {
+        getQrCode()
+    },[])    
+    
 
+    const createQrCode = () => {
+        const qrCode = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://${userUrl}`
+
+        setUserUrl(qrCode)
+        
+        console.log('já jsem ' + qrCode)       
+
+         
+    }
+
+    // Zrušení okamžitého načtení stránky po odeslání formuláře
     const formSubmit = (e) => {
         e.preventDefault()
         console.log("submit");
     }
 
 
-    return <section>
+    return <section className='api-container'>
         <div>
-        <form onSubmit={formSubmit}>
+        <form onSubmit={formSubmit} className='form-box'>
             <input type="text" 
                    placeholder='Text or URL'
                    onChange={ (e) => setUserUrl(e.target.value)}
                    value={userUrl}/>
-            <button>Generovat QR kód</button>
-
-        </form>
+            <button onClick={createQrCode}>Generovat QR kód</button>
+        </form>        
         </div>
 
         <div className='qr-code'>
-
+            <img src={userUrl} alt="" />
         </div>
 
     </section>

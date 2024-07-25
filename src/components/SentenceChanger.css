@@ -14,4 +14,9 @@
 
 .sentence-box p {
     margin: 0px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+
+
 }

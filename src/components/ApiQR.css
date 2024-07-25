@@ -1,0 +1,40 @@
+.api-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: black;    
+    
+}
+
+.form-box input {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 450px;
+}
+
+
+.form-box button {
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.qr-code {
+    margin-top: 20px;
+    min-width: 450px;
+    min-height: 450px;
+    text-align: center;
+    line-height: 450px;
+    background-color:white;
+}

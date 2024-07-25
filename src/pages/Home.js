@@ -2,12 +2,13 @@ import SentenceChanger from "../components/SentenceChanger";
 import Presentation from "../components/Presentation";
 import DescriptionBox from "../components/DescriptionBox";
 import { Link } from "react-router-dom";
+import './Home.css'
 
 const Home = () => {
     return <section className="app-container">
         <nav>
             <ul>
-                <li>Home</li>
+                <li className="li-home">Home</li>
                 <li><Link to='./ApiPage'>ApiPage</Link></li>
             </ul>
         </nav>
