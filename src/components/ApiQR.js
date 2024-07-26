@@ -14,10 +14,7 @@ const ApiQR = () => {
         e.preventDefault() 
 
             setUserUrl(url)            
-        }
-        
-
-    
+        }   
 
     // useEffect( () => {
     //     setUserUrl('')

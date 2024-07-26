@@ -12,7 +12,6 @@ const SentenceChanger = () => {
         setSentence(sentences[randomNum].sentence)
     }
 
-
     useEffect( () => {      
         changeSentence();
     }, [])

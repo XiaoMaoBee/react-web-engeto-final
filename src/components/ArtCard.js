@@ -8,7 +8,6 @@ const ArtCard = (props) => {
         <p>Author/performer: {props.studentName}</p>        
         <p>Purpose: {props.purpose}</p>
         <p className="description">Popis:<br /> {props.description}</p>
-        {/* <MoreInfoButton /> */}
     </div>
 }
 
