@@ -1,42 +1,45 @@
 // import { json } from 'react-router-dom';
 import './ApiQR.css';
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 
 const ApiQR = () => {    
 
     const [userUrl, setUserUrl] = useState('');
-    let url  = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://${userUrl}`
-    
+    const [inputString, setInputString] = useState('');
 
-    // Zrušení okamžitého načtení stránky po odeslání formuláře
+    let url  = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://`
+    
     const formSubmit = (e) => {
-        e.preventDefault() 
+        e.preventDefault()
 
-            setUserUrl(url)            
-        }   
-
-    // useEffect( () => {
-    //     setUserUrl('')
-    //  })
-
+        if (!inputString) {
+            setUserUrl('')
+        }
+    }
     
 
-// const getQrCode = () => {
-//     setUserUrl(url)  
-// }
-  
+    useEffect( () => {
+        url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://`        
+        
+    }, [])
+
+    const resetQR = () => {
+        setUserUrl('')
+        setInputString('')
+    }
 
 
     return <section className='api-container'>
         <div>
         <form onSubmit={formSubmit} className='form-box'>
             <input type="text" 
-                   placeholder='Text or URL'
-                   onChange={ (e) => setUserUrl(e.target.value)}
-                   value={userUrl}/>
+                   placeholder='Enter URL in shape <wanted-url.com>'
+                   onChange={ (e) => setInputString(e.target.value)}
+                   value={inputString}/>
 
-            <button>Generovat QR kód</button>            
+            <button onClick={ () => setUserUrl(`${url}${inputString}`)}>Generate QR code</button> 
+            <button onClick={resetQR}>Reset QR form</button>           
 
         </form>        
         </div>
@@ -45,25 +48,7 @@ const ApiQR = () => {
             <img src={userUrl} alt="" />
         </div>
 
-    </section>
-}
-
-export default ApiQR;
+    </section>}
 
 
-
-
-
-    // Příprava dat z api
-    // const getQrCode = async () => {
-    //     const response = await fetch(url);
-    //     const data = response.url
-    //     console.log(response)
-    //     console.log(data)
-
-    // } 
-
-
-     // useEffect( () => {
-    //     getQrCode()
-    // },[])  
+export default ApiQR; 

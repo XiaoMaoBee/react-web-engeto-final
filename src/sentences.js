@@ -10,7 +10,7 @@ const data = [
     },
     {
         subject:"story-writing",
-        sentence: "3-Writing stories is a great way to share your experiences, thoughts, successes and failures with the world. It helps to step back from the problem and look at it from the position of an observer, without emotions and judgments."
+        sentence: "3-Writing stories is a great way to share your experiences, thoughts, successes and failures with the world. It helps to step back from the problem and look at it from the position of an observer, without emotions and condemnation."
     },
     {
         subject: "drawing",

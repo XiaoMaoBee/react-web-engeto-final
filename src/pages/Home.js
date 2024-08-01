@@ -13,7 +13,7 @@ const Home = () => {
             </ul>
         </nav>
 
-    <div className="web-intro">
+    <div>
     <h1>Sofija's Arts</h1>
     </div>
     <SentenceChanger />

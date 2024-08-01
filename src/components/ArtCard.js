@@ -6,8 +6,7 @@ const ArtCard = (props) => {
         <img src={props.image} alt="" />
         <h2>{props.style}</h2>
         <p>Author/performer: {props.studentName}</p>        
-        <p>Purpose: {props.purpose}</p>
-        <p className="description">Popis:<br /> {props.description}</p>
+        <p className='purpose'>Purpose: {props.purpose}</p>
     </div>
 }
 

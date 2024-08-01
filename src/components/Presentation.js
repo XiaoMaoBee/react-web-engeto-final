@@ -11,32 +11,31 @@ const Presentation = () => {
         <Card style={data[0].art} 
            image={data[0].image}
            studentName={data[0].artist_name}
-           purpose={data[0].purpose}
-        //    description={data[0].description} 
+           purpose={data[0].purpose}         
            />
+
         <Card style={data[1].art} 
             image={data[1].image}
             studentName={data[1].artist_name}
-            purpose={data[1].purpose}
-            // description={data[1].description} 
+            purpose={data[1].purpose} 
             />
+
         <Card style={data[2].art} 
             image={data[2].image}
             studentName={data[2].artist_name}
-            purpose={data[2].purpose}
-            // description={data[2].description} 
+            purpose={data[2].purpose} 
             />
+
         <Card style={data[3].art} 
             image={data[3].image}
             studentName={data[3].artist_name}
-            purpose={data[3].purpose}
-            // description={data[3].description} 
+            purpose={data[3].purpose} 
             />
+
         <Card style={data[4].art} 
             image={data[4].image}
             studentName={data[4].artist_name}
-            purpose={data[4].purpose}
-            // description={data[4].description} 
+            purpose={data[4].purpose} 
            />
     </div>
 

@@ -6,7 +6,7 @@ const Api = () => {
   return <section className="api-page-container">
     <nav>
         <ul>
-            <li className="li-home"><Link to='/'>Domů</Link></li>
+            <li className="li-home"><Link to='/'>Home</Link></li>
             <li>ApiPage</li>
         </ul>
     </nav>
