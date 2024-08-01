@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home";
 import Api from "./pages/ApiPage";
 
+/* Oldřich Lapka / Discord: Oldřich L. (Olda) */
+
 const App = () => {
 
 
