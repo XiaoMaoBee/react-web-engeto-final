@@ -1,4 +1,4 @@
-import './DescriptionBox.css';
+import './descriptionBox.css';
 import { useState } from 'react';
 import artDescriptions from '../data'
 

@@ -30,4 +30,8 @@
 
 .description-box p {
     text-align: center;
+    display: flex;
+    align-items: center;
+    height: 125px;
+    border-top: 1px white solid;
 }

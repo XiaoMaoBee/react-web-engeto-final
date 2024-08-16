@@ -1,8 +1,9 @@
 import SentenceChanger from "../components/SentenceChanger";
 import Presentation from "../components/Presentation";
 import DescriptionBox from "../components/DescriptionBox";
+import ArtCard from "../components/ArtCard";
 import { Link } from "react-router-dom";
-import './Home.css'
+import './home.css'
 
 const Home = () => {
     return <section className="app-container">

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ApiQR from "../components/ApiQR";
-import './ApiPage.css';
+import './apiPage.css';
 
 const Api = () => {
   return <section className="api-page-container">

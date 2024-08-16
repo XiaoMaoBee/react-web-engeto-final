@@ -1,5 +1,4 @@
-// import { json } from 'react-router-dom';
-import './ApiQR.css';
+import './apiQR.css';
 import { useState, useEffect } from 'react'
 
 
@@ -8,7 +7,7 @@ const ApiQR = () => {
     const [userUrl, setUserUrl] = useState('');
     const [inputString, setInputString] = useState('');
 
-    let url  = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://`
+    const URL  = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://`
     
     const formSubmit = (e) => {
         e.preventDefault()
@@ -17,28 +16,21 @@ const ApiQR = () => {
             setUserUrl('')
         }
     }
-    
-
-    useEffect( () => {
-        url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://`        
-        
-    }, [])
 
     const resetQR = () => {
         setUserUrl('')
         setInputString('')
     }
 
-
     return <section className='api-container'>
         <div>
         <form onSubmit={formSubmit} className='form-box'>
             <input type="text" 
-                   placeholder='Enter URL in shape <wanted-url.com>'
-                   onChange={ (e) => setInputString(e.target.value)}
-                   value={inputString}/>
+                placeholder='Enter URL in shape <wanted-url.com>'
+                onChange={ (e) => setInputString(e.target.value)}
+                value={inputString}/>
 
-            <button onClick={ () => setUserUrl(`${url}${inputString}`)}>Generate QR code</button> 
+            <button onClick={ () => setUserUrl(`${URL}${inputString}`)}>Generate QR code</button> 
             <button onClick={resetQR}>Reset QR form</button>           
 
         </form>        
