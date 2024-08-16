@@ -1,43 +1,42 @@
 .api-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .form-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    background-color: black;    
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
 }
 
 .form-box input {
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 300px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 300px;
 }
 
-
 .form-box button {
-    display: block;
-    padding: 10px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    font-size: 15px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .qr-code {
-    margin-top: 20px;
-    min-width: 300px;
-    min-height: 300px;
-    text-align: center;
-    background-color:white;
+  margin-top: 20px;
+  min-width: 300px;
+  min-height: 300px;
+  text-align: center;
+  background-color: white;
 }
 
 .qr-code img {
-    width: 100%;
+  width: 100%;
 }
